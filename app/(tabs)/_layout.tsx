@@ -5,7 +5,7 @@ import { HapticTab } from '@/components/haptic-tab';
 import { Colors } from '@/constants/theme';
 import { useColorScheme } from '@/hooks/use-color-scheme';
 
-// 🔥 ICONS
+// ICONS
 import { BarChart3, Dumbbell, Home, PieChart } from 'lucide-react-native';
 
 export default function TabLayout() {
