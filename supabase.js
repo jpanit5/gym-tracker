@@ -1,7 +1,6 @@
 import { createClient } from '@supabase/supabase-js';
 import 'react-native-url-polyfill/auto';
 
-// 🔥 conditionally load AsyncStorage
 let storage;
 
 if (typeof window !== 'undefined') {
@@ -10,11 +9,11 @@ if (typeof window !== 'undefined') {
 }
 
 const supabaseUrl = 'https://pwwbyorzntppoqixrzoq.supabase.co';
-const supabaseAnonKey = 'sb_publishable_Yv5XGRjrjD5RHUuDvFhTAQ_3nvigsBj';
+const supabaseAnonKey = 'sb_publishable_Yv6XGRjrjD6RHUuDvFhTAQ_4nvigsBj';
 
 export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
   auth: {
-    storage: storage, // 🔥 FIX HERE
+    storage: storage,
     autoRefreshToken: true,
     persistSession: true,
     detectSessionInUrl: false,
